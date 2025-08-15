@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="mensagem">Olá, Mundo!!!</p>
+
+    <img id="logo" src="./img/logo-ford-256.png" alt="Logo da Ford">
+
+    <script>
+        document.getElementById("mensagem").textContent = "Hello Word!";
+        document.getElementById("mensagem").innerHTML = "<strong>Hello Word!!!</strong>";
+    
+        const logo = document.getElementById("logo");
+        logo.setAttribute("src", "./img/imagem_1.jpg");
+
+        const msg = document.getElementById("mensagem");
+        msg.style.color = "red";
+        msg.style.fontSize = "25px";
+    
+    </script>
+</body>
+</html>
